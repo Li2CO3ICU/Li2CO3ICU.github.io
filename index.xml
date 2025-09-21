@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Li2CO3_BLOG</title>
-        <link>http://localhost:1313/</link>
+        <link>https://li2co3icu.github.io/</link>
         <description>Recent content on Li2CO3_BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Li2CO3ICU</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://li2co3icu.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>归档|Archives</title>
-        <link>http://localhost:1313/archives/</link>
+        <link>https://li2co3icu.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/archives/</guid>
+        <guid>https://li2co3icu.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于|About</title>
-        <link>http://localhost:1313/%E5%85%B3%E4%BA%8Eabout/</link>
+        <link>https://li2co3icu.github.io/%E5%85%B3%E4%BA%8Eabout/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8Eabout/</guid>
+        <guid>https://li2co3icu.github.io/%E5%85%B3%E4%BA%8Eabout/</guid>
         <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>搜索|Search</title>
-        <link>http://localhost:1313/search/</link>
+        <link>https://li2co3icu.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/search/</guid>
+        <guid>https://li2co3icu.github.io/search/</guid>
         <description></description>
         </item>
         <item>
         <title>友链|Links</title>
-        <link>http://localhost:1313/%E5%8F%8B%E9%93%BElinks/</link>
+        <link>https://li2co3icu.github.io/%E5%8F%8B%E9%93%BElinks/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/%E5%8F%8B%E9%93%BElinks/</guid>
+        <guid>https://li2co3icu.github.io/%E5%8F%8B%E9%93%BElinks/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
