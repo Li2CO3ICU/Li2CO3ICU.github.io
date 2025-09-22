@@ -13,8 +13,7 @@
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
         <guid>https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post Markdown 学习记录" /&gt;&lt;p&gt;这篇文章主要对学习Markdown的过程进行一个记录（可能会有不全，会慢慢补充）&lt;/p&gt;
-&lt;h1 id=&#34;markdown-学习记录&#34;&gt;&lt;em&gt;✨$Markdown$&lt;/em&gt; &lt;strong&gt;学习记录&lt;/strong&gt;
+        <description>&lt;img src="https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post Markdown 学习记录" /&gt;&lt;h1 id=&#34;markdown-学习记录&#34;&gt;&lt;em&gt;✨$Markdown$&lt;/em&gt; &lt;strong&gt;学习记录&lt;/strong&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;1-标题&#34;&gt;1. 标题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -49,7 +48,7 @@
 &lt;h4 id=&#34;加粗-加粗&#34;&gt;&lt;strong&gt;加粗&lt;/strong&gt; &lt;code&gt;**加粗**&lt;/code&gt;
 &lt;/h4&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;加粗斜体-加粗斜体&#34;&gt;&lt;em&gt;&lt;strong&gt;加粗斜体&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;*加粗斜体*&lt;/code&gt;
+&lt;h4 id=&#34;加粗斜体-加粗斜体&#34;&gt;&lt;em&gt;&lt;strong&gt;加粗斜体&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;***加粗斜体***&lt;/code&gt;
 &lt;/h4&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;h4 id=&#34;删除线-删除线&#34;&gt;&lt;del&gt;删除线&lt;/del&gt; &lt;code&gt;~~删除线~~&lt;/code&gt;
@@ -64,9 +63,14 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;1.有序列表1 &lt;code&gt;1.有序列表1&lt;/code&gt;&lt;br&gt;
-2.有序列表2 &lt;code&gt;2.有序列表2&lt;/code&gt;&lt;br&gt;
-1.子项 &lt;code&gt;1.子项&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;有序列表1 &lt;code&gt;1. 有序列表1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;有序列表2 &lt;code&gt;2. 有序列表2&lt;/code&gt;
+&lt;ol&gt;
+&lt;li&gt;子项 &lt;code&gt;1. 子项&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;4-链接图片&#34;&gt;4. 链接&amp;amp;图片
 &lt;/h2&gt;&lt;h4 id=&#34;链接文字-链接文字blogli2co3icu&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;blog.li2co3.icu&#34; &gt;链接文字&lt;/a&gt; &lt;code&gt;[链接文字](blog.li2co3.icu) &lt;/code&gt;
 &lt;/h4&gt;&lt;h4 id=&#34;图片说明图片说明httpsblogli2co3icue585b3e4ba8eaboutskill_iconscpng&#34;&gt;&lt;img src=&#34;https://blog.li2co3.icu/%E5%85%B3%E4%BA%8Eabout/Skill_Icons/c.png&#34;
@@ -130,6 +134,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello markdown!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fn&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;fm&#34;&gt;println!&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello markdown!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;7-分割线----&#34;&gt;7. 分割线 &lt;code&gt;---&lt;/code&gt;
 &lt;/h2&gt;&lt;hr&gt;
 &lt;hr&gt;
@@ -189,7 +205,8 @@
 &lt;p&gt;一种排版格式&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;
+</description>
         </item>
         <item>
         <title>归档|Archives</title>
@@ -205,88 +222,7 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://li2co3icu.github.io/%E5%85%B3%E4%BA%8Eabout/</guid>
-        <description>&lt;h1 id=&#34;-欢迎这里是小锂&#34;&gt;🏳️‍⚧️ 欢迎，这里是小锂
-&lt;/h1&gt;&lt;p&gt;&lt;em&gt;(名字来源于一种药物——碳酸锂)&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-我的设备&#34;&gt;💻 我的设备
-&lt;/h2&gt;&lt;p&gt;⌨️ &lt;strong&gt;键盘&lt;/strong&gt;：RK R65&lt;br&gt;
-🖱️ &lt;strong&gt;鼠标&lt;/strong&gt;：MCHOSE A7 Pro&lt;br&gt;
-🎧 &lt;strong&gt;耳机&lt;/strong&gt;：ROG 降临 2&lt;br&gt;
-💻 &lt;strong&gt;笔记本&lt;/strong&gt;：ASUS 天选 3 Plus&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-我的技能&#34;&gt;🛠️ 我的技能
-&lt;/h2&gt;&lt;p&gt;&lt;del&gt;学过的东西都好杂，各个领域都有涉及啦（&lt;/del&gt;&lt;/p&gt;
-&lt;h3 id=&#34;-影视后期&#34;&gt;🎬 影视后期
-&lt;/h3&gt;&lt;p&gt;&lt;del&gt;其实就是 Adobe 全家桶&lt;/del&gt;&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/pr.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/ae.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/ps.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/au.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/LrC.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/pt.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/ai.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-编程语言&#34;&gt;💻 编程语言
-&lt;/h3&gt;&lt;p&gt;&lt;del&gt;学是学了，但是记不记得住就不一定了（&lt;/del&gt;&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/c.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/c++.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/py.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/for.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/rust.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/lua.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-三维建模&#34;&gt;🎨 三维建模
-&lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/acad.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/Revit.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/Inventor.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/swShellFileLauncher.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-计算机仿真&#34;&gt;🧪 计算机仿真
-&lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/ANSYS.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/comsol.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-编辑器--ide&#34;&gt;✍️ 编辑器 / IDE
-&lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/nvim.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/code.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/vim.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/notepad3.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/vs.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/pc.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;&lt;p&gt;&lt;sub&gt;💡 我的neovim配置文件在这里，我将其称为 &lt;a href=&#34;https://github.com/Li2CO3ICU/Li2CO3VIM&#34; style=&#34;color: blue; text-decoration: none;&#34;&gt;Li2CO3VIM&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-喜欢的操作系统&#34;&gt;🖥️ 喜欢的操作系统
-&lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/arch.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/debian.png&#34; width=&#34;50&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/ubuntu.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/kali.png&#34; width=&#34;100&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/w11.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-终端环境&#34;&gt;💻 终端环境
-&lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/pwsh7.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/wezt.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-还有这些但是不知道该分什么类&#34;&gt;🍥 还有这些但是不知道该分什么类
-&lt;/h3&gt;&lt;div align=&#34;center&#34;&gt;
-  &lt;img src=&#34;Skill_Icons/vmware.png&#34; width=&#34;60&#34;/&gt;
-  &lt;img src=&#34;Skill_Icons/wireshark.png&#34; width=&#34;60&#34;/&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt;✨ 我们的存在，就是对恶意最大的反抗。&lt;/p&gt;
-</description>
+        <description></description>
         </item>
         <item>
         <title>搜索|Search</title>
