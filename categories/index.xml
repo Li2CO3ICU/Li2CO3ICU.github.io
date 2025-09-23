@@ -2,25 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Li2CO3_BLOG</title>
-        <link>http://localhost:1313/categories/</link>
+        <link>https://li2co3icu.github.io/categories/</link>
         <description>Recent content in Categories on Li2CO3_BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Li2CO3ICU</copyright>
-        <lastBuildDate>Mon, 22 Sep 2025 12:21:22 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Learn</title>
-        <link>http://localhost:1313/categories/learn/</link>
+        <lastBuildDate>Mon, 22 Sep 2025 12:21:22 +0800</lastBuildDate><atom:link href="https://li2co3icu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Markdown</title>
+        <link>https://li2co3icu.github.io/categories/markdown/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>http://localhost:1313/categories/learn/</guid>
+        <guid>https://li2co3icu.github.io/categories/markdown/</guid>
         <description></description>
         </item>
         <item>
-        <title>Markdown</title>
-        <link>http://localhost:1313/categories/markdown/</link>
+        <title>RUST</title>
+        <link>https://li2co3icu.github.io/categories/rust/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>http://localhost:1313/categories/markdown/</guid>
+        <guid>https://li2co3icu.github.io/categories/rust/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>编程</title>
+        <link>https://li2co3icu.github.io/categories/%E7%BC%96%E7%A8%8B/</link>
+        <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
+        
+        <guid>https://li2co3icu.github.io/categories/%E7%BC%96%E7%A8%8B/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>教程</title>
+        <link>https://li2co3icu.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
+        
+        <guid>https://li2co3icu.github.io/categories/%E6%95%99%E7%A8%8B/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>学习</title>
+        <link>https://li2co3icu.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
+        
+        <guid>https://li2co3icu.github.io/categories/%E5%AD%A6%E4%B9%A0/</guid>
         <description></description>
         </item>
         
