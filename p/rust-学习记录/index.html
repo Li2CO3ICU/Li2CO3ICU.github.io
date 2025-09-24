@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="分享学习RUST的过程（不保证完全准确）">
 <title>RUST 学习记录</title>
 
-<link rel='canonical' href='https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/'>
+<link rel='canonical' href='http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/'>
 
 <link rel="stylesheet" href="../../scss/style.min.421c2d0219e90c940ecd18940c7b8e4d4cf2f86c9cb8c918591c476d3bd84b06.css"><meta property='og:title' content="RUST 学习记录">
 <meta property='og:description' content="分享学习RUST的过程（不保证完全准确）">
-<meta property='og:url' content='https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/'>
+<meta property='og:url' content='http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/'>
 <meta property='og:site_name' content='Li2CO3_BLOG'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='RUST' /><meta property='article:published_time' content='2025-09-22T12:21:22&#43;08:00'/><meta property='article:modified_time' content='2025-09-22T12:21:22&#43;08:00'/><meta property='og:image' content='https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='RUST' /><meta property='article:published_time' content='2025-09-22T12:21:22&#43;08:00'/><meta property='article:modified_time' content='2025-09-22T12:21:22&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg' />
 <meta name="twitter:title" content="RUST 学习记录">
 <meta name="twitter:description" content="分享学习RUST的过程（不保证完全准确）"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg' />
+    <meta name="twitter:image" content='http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg' />
     <link rel="shortcut icon" href="../../favicon.ico" />
 
     </head>
@@ -358,8 +358,20 @@
             <li><a href="#切片-1">切片</a></li>
           </ol>
         </li>
+        <li><a href="#字符串">字符串</a>
+          <ol>
+            <li><a href="#字符串字面量">字符串字面量</a></li>
+            <li><a href="#字符串-1">字符串</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
+    <li><a href="#2-所有权">2. <strong>所有权</strong></a>
+      <ol>
+        <li><a href="#转移">转移</a></li>
+      </ol>
+    </li>
+    <li><a href="#3-引用">3. 引用</a></li>
   </ol>
 </nav>
         </div>
@@ -445,7 +457,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-lambda"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 17l2 -3" /><path d="M15 17c-2.5 0 -2.5 -6 -5 -6" /></svg>
             <time class="article-time--reading">
-                本文共 898 字
+                本文共 1652 字
             </time>
         </div>
         
@@ -461,7 +473,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -548,7 +560,8 @@
   </tbody>
 </table></div>
 <h5 id="isize同上取决于系统位数32为3164为63"><em>isize同上取决于系统位数,32为31，64为63.</em>
-</h5><h3 id="浮点类型">浮点类型
+</h5><hr>
+<h3 id="浮点类型">浮点类型
 </h3><div class="table-wrapper"><table>
   <thead>
       <tr>
@@ -570,10 +583,12 @@
       </tr>
   </tbody>
 </table></div>
+<hr>
 <h3 id="布尔类型">布尔类型
 </h3><ul>
 <li>即 <strong>True</strong> &amp; <strong>False</strong></li>
 </ul>
+<hr>
 <h3 id="字符类型">字符类型
 </h3><ul>
 <li>Rust的字符类型以32位值的形式表示单个<em><strong>Unicode</strong></em>字符
@@ -582,6 +597,7 @@
 </ul>
 </li>
 </ul>
+<hr>
 <h3 id="数组">数组
 </h3><ul>
 <li>最简单的形式，将数据直接括起来：<code>[1,1,2,3,5,8,13]</code></li>
@@ -593,6 +609,7 @@
 </ul>
 </li>
 </ul>
+<hr>
 <h3 id="元组">元组
 </h3><ul>
 <li>元组不同于数组，元组中的元素可以是任何类型<br>
@@ -601,6 +618,7 @@
 <em>index从0开始</em></li>
 <li><em>*零元组：</em><code>()</code></li>
 </ul>
+<hr>
 <h3 id="指针类型">指针类型
 </h3><h4 id="引用">引用
 </h4><p><em><em>&amp;xx类型的值就是对一个xx值的引用</em></em></p>
@@ -628,6 +646,7 @@
 <p><em>星号[*]还可以表示解引用</em></p></blockquote>
 </li>
 </ul>
+<hr>
 <h3 id="向量">向量
 </h3><p>向量<code>Vec&lt;T&gt;</code>分配在堆内存上[可变]</p>
 <div class="highlight"><div class="chroma">
@@ -654,6 +673,7 @@
 </div><ul>
 <li>以上使用<code>push()</code>向<code>vec_1</code>向量中添加元素</li>
 </ul>
+<hr>
 <h3 id="切片">切片
 </h3><p>以下先创建数组与向量</p>
 <div class="highlight"><div class="chroma">
@@ -696,7 +716,109 @@ sv和sa的指针指向源数据而不是创建了新的数组和向量<br>
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<p>未完待续</p>
+<h3 id="字符串">字符串
+</h3><h4 id="字符串字面量">字符串字面量
+</h4><p>字符串字面量放置于双引号中；例如<code>&quot;hello rust！&quot;</code>
+这种形式的数据存储于栈内存中，因此无需考虑所有权机制.</p>
+<h4 id="字符串-1">字符串
+</h4><p>以下方式创建了字符串（String）；</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">str_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;hello rust&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">();</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>需要注意的是，字符串（String）存储在堆内存中，因此在使用时需要考虑所有权机制！<br>
+下一章将介绍所有权机制！</p>
+<h2 id="2-所有权">2. <strong>所有权</strong>
+</h2><p>rust通过所有权机制而不是垃圾回收机制来确保内存安全</p>
+<h3 id="转移">转移
+</h3><p>在rust中，给变量赋值的操作通常不会创建新值，而是将新的指针指向旧值（栈数据除外）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">v_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Hello rust&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">v_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v_1</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>上述代码创建了两个变量为<code>v_1</code>和<code>v_2</code>并且他们的值都为<code>Hello rust</code>，在内存中，这两个变量指向的是同一个地址，同一个数据.</p>
+<p>同理，为函数传递参数也是这种结果.</p>
+<p><em>值得注意的是，存储在栈内存中的数据在传参等操作后，原值通常可用（这也称作<code>copy</code>，也就是会产生新的数据.），而存储在堆内存中的数据经过这样的操作后原值会变为未初始化的状态.</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">vec!</span><span class="p">[</span><span class="mi">10</span><span class="err">，</span><span class="w"> </span><span class="mi">20</span><span class="err">，</span><span class="w"> </span><span class="mi">30</span><span class="p">]</span><span class="err">；</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">//传入x
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">//同上
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="c1">//Error!,因为x此时是未初始化状态
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3-引用">3. 引用
+</h2><p>rust有一种不获取源数据所有权来调用源数据内容的方式叫做<em><strong>引用</strong></em>
+可以使用<code>&amp;e</code>来获得一个对e的引用，和rust的变量部分一样，引用通常也是不可变的，如果要获得可变引用，则需要<code>&amp;mut e</code></p>
+<ul>
+<li>rust不允许同时存在可变引用和不可变引用，但是允许同时存在多个不可变引用.</li>
+<li>rust也允许对引用进行引用，例如</li>
+<li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">Points</span><span class="w"> </span><span class="p">{</span><span class="n">x</span>: <span class="kt">i32</span><span class="p">,</span><span class="w"> </span><span class="n">y</span>: <span class="kt">i32</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Points</span><span class="w"> </span><span class="p">{</span><span class="n">x</span>: <span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="n">y</span>: <span class="mi">2000</span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">r</span>: <span class="kp">&amp;</span><span class="nc">Points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">rr</span>: <span class="kp">&amp;&amp;</span><span class="nc">Points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">r</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>如上给定了数据类型，但是rust也可以自行推断使用了几层引用.</p></blockquote>
+</li>
+<li>不允许对生命周期已经结束的数据进行引用例如</li>
+<li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">v_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="fm">println!</span><span class="p">(</span><span class="o">&amp;</span><span class="n">v_1</span><span class="p">);</span><span class="w"> </span><span class="c1">//此处非法，因为已经离开了作用域，v_1已经被释放！
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<hr>
+<p><em><strong>未完待续</strong></em></p>
 
 </section>
 
@@ -828,7 +950,7 @@ sv和sa的指针指向源数据而不是创建了新的数组和向量<br>
         
         <span>
         发表了2篇文章 · 
-        总计2.21k字
+        总计2.97k字
         </span>    
     </section>
 
@@ -924,7 +1046,7 @@ sv和sa的指针指向源数据而不是创建了新的数组和向量<br>
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="../../ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="../../ts/main.9594728ec88629f676fb6adc0558874f211b835c3dfe4684ac437c4e0eb06909.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
