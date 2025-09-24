@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Li2CO3_BLOG</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://li2co3icu.github.io/page/</link>
         <description>Recent content in Pages on Li2CO3_BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Li2CO3ICU</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>归档|Archives</title>
-        <link>http://localhost:1313/archives/</link>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://li2co3icu.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>归档 | Archives</title>
+        <link>https://li2co3icu.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/archives/</guid>
+        <guid>https://li2co3icu.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
-        <title>关于|About</title>
-        <link>http://localhost:1313/%E5%85%B3%E4%BA%8Eabout/</link>
+        <title>关于 | About</title>
+        <link>https://li2co3icu.github.io/%E5%85%B3%E4%BA%8E-about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8Eabout/</guid>
+        <guid>https://li2co3icu.github.io/%E5%85%B3%E4%BA%8E-about/</guid>
         <description>&lt;h1 id=&#34;-欢迎这里是小锂&#34;&gt;🏳️‍⚧️ 欢迎，这里是小锂
 &lt;/h1&gt;&lt;p&gt;&lt;em&gt;(名字来源于一种药物——碳酸锂)&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -124,19 +124,19 @@
 </description>
         </item>
         <item>
-        <title>搜索|Search</title>
-        <link>http://localhost:1313/search/</link>
+        <title>搜索 | Search</title>
+        <link>https://li2co3icu.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/search/</guid>
+        <guid>https://li2co3icu.github.io/search/</guid>
         <description></description>
         </item>
         <item>
-        <title>友链|Links</title>
-        <link>http://localhost:1313/friends/</link>
+        <title>友链 | Links</title>
+        <link>https://li2co3icu.github.io/friends/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/friends/</guid>
+        <guid>https://li2co3icu.github.io/friends/</guid>
         <description></description>
         </item>
         
