@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/'>
 
-<link rel="stylesheet" href="../../scss/style.min.421c2d0219e90c940ecd18940c7b8e4d4cf2f86c9cb8c918591c476d3bd84b06.css"><meta property='og:title' content="RUST 学习记录">
+<link rel="stylesheet" href="../../scss/style.min.4d14a8514f35ca8a752db6cc8aea716f47faffb56f2649b68871ef1e9c1f4261.css"><meta property='og:title' content="RUST 学习记录">
 <meta property='og:description' content="分享学习RUST的过程（不保证完全准确）">
 <meta property='og:url' content='https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/'>
 <meta property='og:site_name' content='Li2CO3_BLOG'>
@@ -332,13 +332,9 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#rust-的数据类型"><strong>RUST</strong> 的数据类型</a>
+    <li><a href="#rust-的数据类型">RUST 的数据类型</a>
       <ol>
-        <li><a href="#整数类型">整数类型</a>
-          <ol>
-            <li></li>
-          </ol>
-        </li>
+        <li><a href="#整数类型">整数类型</a></li>
         <li><a href="#浮点类型">浮点类型</a></li>
         <li><a href="#布尔类型">布尔类型</a></li>
         <li><a href="#字符类型">字符类型</a></li>
@@ -354,7 +350,6 @@
         <li><a href="#向量">向量</a></li>
         <li><a href="#切片">切片</a>
           <ol>
-            <li></li>
             <li><a href="#切片-1">切片</a></li>
           </ol>
         </li>
@@ -366,7 +361,7 @@
         </li>
       </ol>
     </li>
-    <li><a href="#所有权"><strong>所有权</strong></a>
+    <li><a href="#所有权">所有权</a>
       <ol>
         <li><a href="#转移">转移</a></li>
       </ol>
@@ -379,11 +374,11 @@
         <li><a href="#声明">声明</a></li>
         <li><a href="#if-与-match">if 与 match</a>
           <ol>
-            <li><a href="#if-let-表达式"><strong>if let</strong> 表达式</a></li>
+            <li><a href="#if-let-表达式">if let 表达式</a></li>
           </ol>
         </li>
         <li><a href="#循环">循环</a></li>
-        <li><a href="#return-表达式"><strong>return</strong> 表达式</a></li>
+        <li><a href="#return-表达式">return 表达式</a></li>
         <li><a href="#函数与方法调用">函数与方法调用</a></li>
         <li><a href="#字段与元素">字段与元素</a></li>
         <li><a href="#引用操作符">引用操作符</a></li>
@@ -474,7 +469,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-lambda"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 17l2 -3" /><path d="M15 17c-2.5 0 -2.5 -6 -5 -6" /></svg>
             <time class="article-time--reading">
-                本文共 2951 字
+                本文共 2946 字
             </time>
         </div>
         
@@ -505,12 +500,14 @@
     <section class="article-content">
     
     
-    <h2 id="rust-的数据类型"><strong>RUST</strong> 的数据类型
+    <h2 id="rust-的数据类型">RUST 的数据类型
 </h2><h3 id="整数类型">整数类型
-</h3><div class="table-wrapper"><table>
+</h3><blockquote>
+<p>无符号整数</p>
+<div class="table-wrapper"><table>
   <thead>
       <tr>
-          <th style="text-align: left">类型 | <em><strong>无符号整数</strong></em></th>
+          <th style="text-align: left">类型</th>
           <th style="text-align: left">范围</th>
       </tr>
   </thead>
@@ -540,12 +537,14 @@
           <td style="text-align: left">0~2<sup>32</sup>-1 or 0-2<sup>64</sup>-1</td>
       </tr>
   </tbody>
-</table></div>
-<h5 id="usize取决于系统位数32为3264为64"><em>usize取决于系统位数,32为32，64为64.</em>
-</h5><div class="table-wrapper"><table>
+</table></div></blockquote>
+<p>usize取决于系统位数,32为32，64为64.</p>
+<blockquote>
+<p>有符号整数</p>
+<div class="table-wrapper"><table>
   <thead>
       <tr>
-          <th style="text-align: left">类型 | <em><strong>有符号整数</strong></em></th>
+          <th style="text-align: left">类型</th>
           <th style="text-align: left">范围</th>
       </tr>
   </thead>
@@ -575,9 +574,8 @@
           <td style="text-align: left">-2<sup>31</sup>~2<sup>31</sup>-1 or -2<sup>63</sup>~2<sup>63</sup>-1</td>
       </tr>
   </tbody>
-</table></div>
-<h5 id="isize同上取决于系统位数32为3164为63"><em>isize同上取决于系统位数,32为31，64为63.</em>
-</h5><hr>
+</table></div></blockquote>
+<p>isize同上取决于系统位数,32为31，64为63.</p>
 <h3 id="浮点类型">浮点类型
 </h3><div class="table-wrapper"><table>
   <thead>
@@ -600,12 +598,10 @@
       </tr>
   </tbody>
 </table></div>
-<hr>
 <h3 id="布尔类型">布尔类型
 </h3><ul>
 <li>即 <strong>True</strong> &amp; <strong>False</strong></li>
 </ul>
-<hr>
 <h3 id="字符类型">字符类型
 </h3><ul>
 <li>Rust的字符类型以32位值的形式表示单个<em><strong>Unicode</strong></em>字符
@@ -614,19 +610,17 @@
 </ul>
 </li>
 </ul>
-<hr>
 <h3 id="数组">数组
 </h3><ul>
 <li>最简单的形式，将数据直接括起来：<code>[1,1,2,3,5,8,13]</code></li>
-<li><em>*不要把数组局限于数；如<code>[&quot;hello&quot;, &quot;rust&quot;, &quot;love&quot;, &quot;you&quot;]</code><br>
+<li><em>*不要把数组局限于数;如<code>[&quot;hello&quot;, &quot;rust&quot;, &quot;love&quot;, &quot;you&quot;]</code><br>
 也是一个合法的数组</em></li>
-<li>可以通过<code>[V; N]</code>来生成一个相同元素的数组；
+<li>可以通过<code>[V; N]</code>来生成一个相同元素的数组;
 <ul>
 <li>其中，V为每个元素的值[<em><strong>Value</strong></em>], N为数据个数[<em><strong>Number</strong></em>].</li>
 </ul>
 </li>
 </ul>
-<hr>
 <h3 id="元组">元组
 </h3><ul>
 <li>元组不同于数组，元组中的元素可以是任何类型<br>
@@ -635,11 +629,10 @@
 <em>index从0开始</em></li>
 <li><em>*零元组：</em><code>()</code></li>
 </ul>
-<hr>
 <h3 id="指针类型">指针类型
 </h3><h4 id="引用">引用
 </h4><p><em><em>&amp;xx类型的值就是对一个xx值的引用</em></em></p>
-<p><strong>&amp;T</strong> : 不可变引用；<br>
+<p><strong>&amp;T</strong> : 不可变引用;<br>
 <strong>&amp;mut T</strong> : 可变引用.</p>
 <h4 id="box">Box
 </h4><div class="highlight"><div class="chroma">
@@ -663,7 +656,6 @@
 <p><em>星号[*]还可以表示解引用</em></p></blockquote>
 </li>
 </ul>
-<hr>
 <h3 id="向量">向量
 </h3><p>向量<code>Vec&lt;T&gt;</code>分配在堆内存上[可变]</p>
 <div class="highlight"><div class="chroma">
@@ -690,7 +682,6 @@
 </div><ul>
 <li>以上使用<code>push()</code>向<code>vec_1</code>向量中添加元素</li>
 </ul>
-<hr>
 <h3 id="切片">切片
 </h3><p>以下先创建数组与向量</p>
 <div class="highlight"><div class="chroma">
@@ -703,8 +694,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">arr_1</span>: <span class="p">[</span><span class="kt">f64</span><span class="p">;</span><span class="w"> </span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w">     </span><span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">0.707</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">0.707</span><span class="p">];</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="首先来介绍普通引用">首先来介绍普通引用
-</h5><div class="highlight"><div class="chroma">
+</div><p>首先来介绍普通引用</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -732,13 +723,12 @@ sv和sa的指针指向源数据而不是创建了新的数组和向量<br>
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">print</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sv</span><span class="p">[</span><span class="mi">1</span><span class="o">..</span><span class="mi">3</span><span class="p">]);</span><span class="w"> </span><span class="c1">//这是有趣的一部分，因为它对一个切片进行了切片！
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><hr>
-<h3 id="字符串">字符串
+</div><h3 id="字符串">字符串
 </h3><h4 id="字符串字面量">字符串字面量
-</h4><p>字符串字面量放置于双引号中；例如<code>&quot;hello rust！&quot;</code>
+</h4><p>字符串字面量放置于双引号中;例如<code>&quot;hello rust！&quot;</code>
 这种形式的数据存储于栈内存中，因此无需考虑所有权机制.</p>
 <h4 id="字符串-1">字符串
-</h4><p>以下方式创建了字符串（String）；</p>
+</h4><p>以下方式创建了字符串（String）;</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -749,7 +739,7 @@ sv和sa的指针指向源数据而不是创建了新的数组和向量<br>
 </div>
 </div><p>需要注意的是，字符串（String）存储在堆内存中，因此在使用时需要考虑所有权机制！<br>
 下一章将介绍所有权机制！</p>
-<h2 id="所有权"><strong>所有权</strong>
+<h2 id="所有权">所有权
 </h2><p>rust通过所有权机制而不是垃圾回收机制来确保内存安全</p>
 <h3 id="转移">转移
 </h3><p>在rust中，给变量赋值的操作通常不会创建新值，而是将新的指针指向旧值（栈数据除外）</p>
@@ -777,7 +767,7 @@ sv和sa的指针指向源数据而不是创建了新的数组和向量<br>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">vec!</span><span class="p">[</span><span class="mi">10</span><span class="err">，</span><span class="w"> </span><span class="mi">20</span><span class="err">，</span><span class="w"> </span><span class="mi">30</span><span class="p">]</span><span class="err">；</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">vec!</span><span class="p">[</span><span class="mi">10</span><span class="err">，</span><span class="w"> </span><span class="mi">20</span><span class="err">，</span><span class="w"> </span><span class="mi">30</span><span class="p">];</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">//传入x
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -834,7 +824,6 @@ sv和sa的指针指向源数据而不是创建了新的数组和向量<br>
 </div>
 </div></li>
 </ul>
-<hr>
 <h2 id="表达式">表达式
 </h2><h3 id="表达式语言">表达式语言
 </h3><p>在rust中，if和match可以产生值<br>
@@ -958,7 +947,7 @@ Rust 的 if 表达式可以用来初始化变量</p>
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里不再过多介绍，接下来是<code>match</code><br>
-match有点像C语言的switch，但是更灵活；</p>
+match有点像C语言的switch，但是更灵活;</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -981,7 +970,7 @@ match有点像C语言的switch，但是更灵活；</p>
 <ul>
 <li>值得注意的是，match的分支是从第一条匹配到最后一条，也就是说如果将第四条放在顶端那么这段代码任意<code>code</code>都会输出<code>Error</code></li>
 </ul>
-<h4 id="if-let-表达式"><strong>if let</strong> 表达式
+<h4 id="if-let-表达式">if let 表达式
 </h4><p><code>if let</code>表达式只是对match表达式的简写，<code>if let</code>可以实现的功能完全可以由<code>match</code>实现</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1059,7 +1048,7 @@ match有点像C语言的switch，但是更灵活；</p>
 </div>
 </div></li>
 </ul>
-<h3 id="return-表达式"><strong>return</strong> 表达式
+<h3 id="return-表达式">return 表达式
 </h3><p>return表达式退出当前函数，并且向调用者返回值.
 通常使用<code>return;</code>来代表<code>return ();</code></p>
 <h3 id="函数与方法调用">函数与方法调用
@@ -1269,7 +1258,7 @@ match有点像C语言的switch，但是更灵活；</p>
         
         <span>
         发表了2篇文章 · 
-        总计4.27k字
+        总计4.26k字
         </span>    
     </section>
 
