@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>教程 on Li2CO3_BLOG</title>
-        <link>https://li2co3icu.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+        <link>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</link>
         <description>Recent content in 教程 on Li2CO3_BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Li2CO3ICU</copyright>
-        <lastBuildDate>Sat, 27 Sep 2025 11:11:37 +0800</lastBuildDate><atom:link href="https://li2co3icu.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 27 Sep 2025 11:11:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown 学习记录</title>
-        <link>https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+        <link>http://localhost:1313/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post Markdown 学习记录" /&gt;&lt;h1 id=&#34;markdown-学习记录&#34;&gt;&lt;em&gt;✨$Markdown$&lt;/em&gt; &lt;strong&gt;学习记录&lt;/strong&gt;
+        <guid>http://localhost:1313/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;img src="http://localhost:1313/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post Markdown 学习记录" /&gt;&lt;h1 id=&#34;markdown-学习记录&#34;&gt;&lt;em&gt;✨$Markdown$&lt;/em&gt; &lt;strong&gt;学习记录&lt;/strong&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;1-标题&#34;&gt;1. 标题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -162,11 +162,11 @@
         </item>
         <item>
         <title>RUST 学习记录</title>
-        <link>https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+        <link>http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post RUST 学习记录" /&gt;&lt;h2 id=&#34;rust-的数据类型&#34;&gt;RUST 的数据类型
+        <guid>http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;img src="http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post RUST 学习记录" /&gt;&lt;h2 id=&#34;rust-的数据类型&#34;&gt;RUST 的数据类型
 &lt;/h2&gt;&lt;h3 id=&#34;整数类型&#34;&gt;整数类型
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;无符号整数&lt;/p&gt;&lt;/blockquote&gt;

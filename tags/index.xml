@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Li2CO3_BLOG</title>
-        <link>https://li2co3icu.github.io/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Recent content in Tags on Li2CO3_BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Li2CO3ICU</copyright>
-        <lastBuildDate>Sat, 27 Sep 2025 11:11:37 +0800</lastBuildDate><atom:link href="https://li2co3icu.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 27 Sep 2025 11:11:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown</title>
-        <link>https://li2co3icu.github.io/tags/markdown/</link>
+        <link>http://localhost:1313/tags/markdown/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>https://li2co3icu.github.io/tags/markdown/</guid>
+        <guid>http://localhost:1313/tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>RUST</title>
-        <link>https://li2co3icu.github.io/tags/rust/</link>
+        <link>http://localhost:1313/tags/rust/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>https://li2co3icu.github.io/tags/rust/</guid>
+        <guid>http://localhost:1313/tags/rust/</guid>
         <description></description>
         </item>
         
