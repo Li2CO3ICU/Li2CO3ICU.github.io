@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Li2CO3_BLOG</title>
-        <link>https://li2co3icu.github.io/</link>
+        <link>http://localhost:1313/</link>
         <description>Recent content on Li2CO3_BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Li2CO3ICU</copyright><atom:link href="https://li2co3icu.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>Li2CO3ICU</copyright><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown 学习记录</title>
-        <link>https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+        <link>http://localhost:1313/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://li2co3icu.github.io/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post Markdown 学习记录" /&gt;&lt;h1 id=&#34;markdown-学习记录&#34;&gt;&lt;em&gt;✨$Markdown$&lt;/em&gt; &lt;strong&gt;学习记录&lt;/strong&gt;
+        <guid>http://localhost:1313/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;img src="http://localhost:1313/p/markdown-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post Markdown 学习记录" /&gt;&lt;h1 id=&#34;markdown-学习记录&#34;&gt;&lt;em&gt;✨$Markdown$&lt;/em&gt; &lt;strong&gt;学习记录&lt;/strong&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;1-标题&#34;&gt;1. 标题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -161,11 +161,11 @@
         </item>
         <item>
         <title>RUST 学习记录</title>
-        <link>https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+        <link>http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 22 Sep 2025 12:21:22 +0800</pubDate>
         
-        <guid>https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://li2co3icu.github.io/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post RUST 学习记录" /&gt;&lt;h2 id=&#34;rust-的数据类型&#34;&gt;RUST 的数据类型
+        <guid>http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;img src="http://localhost:1313/p/rust-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/top.jpg" alt="Featured image of post RUST 学习记录" /&gt;&lt;h2 id=&#34;rust-的数据类型&#34;&gt;RUST 的数据类型
 &lt;/h2&gt;&lt;h3 id=&#34;整数类型&#34;&gt;整数类型
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;无符号整数&lt;/p&gt;&lt;/blockquote&gt;
@@ -772,18 +772,18 @@ match有点像C语言的switch，但是更灵活;&lt;/p&gt;
         </item>
         <item>
         <title>归档 | Archives</title>
-        <link>https://li2co3icu.github.io/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://li2co3icu.github.io/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于 | About</title>
-        <link>https://li2co3icu.github.io/%E5%85%B3%E4%BA%8E-about/</link>
+        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E-about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://li2co3icu.github.io/%E5%85%B3%E4%BA%8E-about/</guid>
+        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E-about/</guid>
         <description>&lt;h1 id=&#34;-欢迎这里是小锂&#34;&gt;🏳️‍⚧️ 欢迎，这里是小锂
 &lt;/h1&gt;&lt;p&gt;&lt;em&gt;(名字来源于一种药物——碳酸锂)&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -888,18 +888,18 @@ match有点像C语言的switch，但是更灵活;&lt;/p&gt;
         </item>
         <item>
         <title>搜索 | Search</title>
-        <link>https://li2co3icu.github.io/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://li2co3icu.github.io/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         <item>
         <title>友链 | Links</title>
-        <link>https://li2co3icu.github.io/friends/</link>
+        <link>http://localhost:1313/friends/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://li2co3icu.github.io/friends/</guid>
+        <guid>http://localhost:1313/friends/</guid>
         <description></description>
         </item>
         
