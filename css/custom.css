@@ -39,26 +39,3 @@ kbd {
   font-family: monospace;
 }
 
-/* // 头像旋转动画 */
-.sidebar header .site-avatar .site-logo {
-  transition: transform 1.65s ease-in-out; // 旋转时间
-}
-
-.sidebar header .site-avatar .site-logo:hover {
-  transform: rotate(360deg); // 旋转角度为360度
-}
-
-/* // macOS 风格代码块 */
-.article-content {
-  .highlight:before {
-    content: '';
-    display: block;
-    background: url(/code-header.svg);
-    height: 32px;
-    width: 100%;
-    background-size: 57px;
-    background-repeat: no-repeat;
-    margin-bottom: 5px;
-    background-position: -1px 2px;
-  }
-}

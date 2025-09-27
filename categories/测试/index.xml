@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Li2CO3ICU</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 10 Sep 2025 18:14:29 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Chinese Test</title>
         <link>http://localhost:1313/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
@@ -23,7 +23,16 @@
 不告而别的你 就算为了我着想&lt;br&gt;
 这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;
+    
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;../../p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
@@ -92,7 +101,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Typlog&lt;/a&gt;&lt;/p&gt;
+    &gt;Typlog&lt;/a&gt;
+    
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+&lt;/p&gt;
 </description>
         </item>
         

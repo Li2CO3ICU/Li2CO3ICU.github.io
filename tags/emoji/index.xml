@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Li2CO3ICU</copyright>
-        <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/emoji/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 10 Sep 2025 18:14:29 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/emoji/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Emoji Support</title>
         <link>http://localhost:1313/p/emoji-support/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
@@ -15,14 +15,50 @@
         <guid>http://localhost:1313/p/emoji-support/</guid>
         <description>&lt;img src="http://localhost:1313/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
+    &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt;
+    
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+ function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Inline Shortcodes&lt;/a&gt;
+    
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+.&lt;/p&gt;
 &lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
+    &gt;configuration&lt;/a&gt;
+    
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+ and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙈&lt;/span&gt; &lt;code&gt;:see_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙉&lt;/span&gt; &lt;code&gt;:hear_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙊&lt;/span&gt; &lt;code&gt;:speak_no_evil:&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;http://www.emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
+    &gt;Emoji cheat sheet&lt;/a&gt;
+    
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+        height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+        &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+        &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+            fill=&#34;currentColor&#34;&gt;
+    &lt;/svg&gt;&lt;/span&gt;
+    
+ is a useful reference for emoji shorthand codes.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
