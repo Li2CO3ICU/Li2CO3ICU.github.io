@@ -1,0 +1,25 @@
+/* 页脚整体 */
+.site-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #CDD6F4;
+}
+
+/* 统计信息 */
+.site-footer .totalcount span {
+    color: #CDD6F4 !important;
+}
+
+/* 自定义名言 */
+.site-footer .footer-quote {
+    display: block !important;
+    color: #89b4fa !important;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/* 版权信息 */
+.site-footer .copyright {
+    color: #94a1b2;
+}

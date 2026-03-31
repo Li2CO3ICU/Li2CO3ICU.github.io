@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Li2CO3_BLOG</title>
+        <link>http://localhost:1313/page/</link>
+        <description>Recent content in Pages on Li2CO3_BLOG</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Li2CO3ICU</copyright>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>归档 | Archives</title>
+        <link>http://localhost:1313/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>关于 | About</title>
+        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E-about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E-about/</guid>
+        <description>&lt;h1 id=&#34;-欢迎这里是小锂&#34;&gt;🏳️‍⚧️ 欢迎，这里是小锂
+&lt;/h1&gt;&lt;p&gt;&lt;em&gt;(名字来源于一种药物——碳酸锂)&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-我的设备&#34;&gt;💻 我的设备
+&lt;/h2&gt;&lt;p&gt;因为我喜欢把每个小设备都打理得妥妥当当，它们都是我日常学习、创作、编程时的好伙伴～&lt;br&gt;
+⌨️ &lt;strong&gt;键盘&lt;/strong&gt;：RK R65&lt;br&gt;
+🖱️ &lt;strong&gt;鼠标&lt;/strong&gt;：MCHOSE A7 Pro&lt;br&gt;
+🎧 &lt;strong&gt;耳机&lt;/strong&gt;：ROG 降临 2&lt;br&gt;
+💻 &lt;strong&gt;笔记本&lt;/strong&gt;：ASUS 天选 3 Plus&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-自我介绍&#34;&gt;🧪 自我介绍
+&lt;/h2&gt;&lt;p&gt;嘿呀，欢迎来到我的小世界！我是Li2CO3，虽然它是一种精神药物，但它代表的是我生活中的一份独特色彩。作为药娘&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，我总是试图在挑战中找到乐趣，在生活中的“bug”里也能看见一丝可爱的光亮。🌸&lt;/p&gt;
+&lt;p&gt;编程这条路上有时候挺孤单的，但正是每一次调试、解决问题的成就感，让我觉得所有的辛苦都是值得的！我喜欢在这条路上不断学习，虽然偶尔有点小迷茫，但每次跨过难关时的喜悦，简直像发现了一个彩蛋！💻💖&lt;/p&gt;
+&lt;p&gt;希望在这里和你们分享我的学习历程和点滴心情，既有计算机的技术分享，也有一点关于我作为药娘的感悟。一起快乐学习，遇到难题也能笑着走过！😊&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-我的技能乱炖&#34;&gt;🛠️ 我的技能乱炖
+&lt;/h2&gt;&lt;h3 id=&#34;-影视后期&#34;&gt;🎬 影视后期
+&lt;/h3&gt;&lt;p&gt;我的影视后期技能主要来源于Adobe全家桶，基本上什么都能做一做～&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/pr.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/ae.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/ps.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/au.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/LrC.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/pt.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/ai.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-编程语言&#34;&gt;💻 编程语言
+&lt;/h3&gt;&lt;p&gt;学了好多语言，但每次碰到bug的时候，脑袋总是短路一下🤣&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/c.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/c++.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/py.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/for.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/rust.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/lua.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-三维建模&#34;&gt;🎨 三维建模
+&lt;/h3&gt;&lt;p&gt;每次做建模的时候，感觉自己像在做小艺术品，虽然有时候挺复杂的，但还是很有成就感！&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/acad.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/Revit.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/Inventor.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/swShellFileLauncher.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-计算机仿真&#34;&gt;🧪 计算机仿真
+&lt;/h3&gt;&lt;p&gt;计算机仿真就像是给模型加上魔法，可以让现实变得更有趣！&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/ANSYS.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/comsol.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-编辑器--ide&#34;&gt;✍️ 编辑器 / IDE
+&lt;/h3&gt;&lt;p&gt;这些工具我都很喜欢，每次在编辑器里工作，总觉得有点魔力～&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/nvim.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/code.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/vim.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/notepad3.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/vs.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/pc.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;&lt;p&gt;&lt;sub&gt;💡 我的neovim配置文件在这里，我将其称为 &lt;a href=&#34;https://github.com/Li2CO3ICU/Li2CO3VIM&#34; style=&#34;color: blue; text-decoration: none;&#34;&gt;Li2CO3VIM&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-喜欢的操作系统&#34;&gt;🖥️ 喜欢的操作系统
+&lt;/h3&gt;&lt;p&gt;我超级爱Arch Linux，每次启动它都觉得自己超强！&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/arch.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/debian.png&#34; width=&#34;50&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/ubuntu.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/kali.png&#34; width=&#34;100&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/w11.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-终端环境&#34;&gt;💻 终端环境
+&lt;/h3&gt;&lt;p&gt;没有终端，我的生活好像少了点什么呢～&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/pwsh7.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/wezt.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-还有这些但是不知道该分什么类&#34;&gt;🍥 还有这些但是不知道该分什么类
+&lt;/h3&gt;&lt;p&gt;这些小工具也常常派上用场，虽然它们都不太属于某个大类，但它们是我学习和工作的小伙伴！&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+  &lt;img src=&#34;Skill_Icons/vmware.png&#34; width=&#34;60&#34;/&gt;
+  &lt;img src=&#34;Skill_Icons/wireshark.png&#34; width=&#34;60&#34;/&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;✨ 我们的存在，就是对恶意最大的反抗。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;药娘是中国大陆网络用语，指通过激素疗法来维持女性特征的跨性别女性。&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索 | Search</title>
+        <link>http://localhost:1313/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>友链 | Links</title>
+        <link>http://localhost:1313/friends/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/friends/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
