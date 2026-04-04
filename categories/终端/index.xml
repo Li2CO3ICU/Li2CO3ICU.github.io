@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>终端 on Li2CO3_BLOG</title>
+        <link>http://localhost:1313/categories/%E7%BB%88%E7%AB%AF/</link>
+        <description>Recent content in 终端 on Li2CO3_BLOG</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Li2CO3ICU</copyright>
+        <lastBuildDate>Fri, 03 Apr 2026 20:06:22 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%BB%88%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Ghostty终端以及Fish Shell美化</title>
+        <link>http://localhost:1313/p/ghostty%E7%BB%88%E7%AB%AF%E4%BB%A5%E5%8F%8Afish-shell%E7%BE%8E%E5%8C%96/</link>
+        <pubDate>Fri, 03 Apr 2026 20:06:22 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/ghostty%E7%BB%88%E7%AB%AF%E4%BB%A5%E5%8F%8Afish-shell%E7%BE%8E%E5%8C%96/</guid>
+        <description>&lt;h2 id=&#34;为什么是ghostty&#34;&gt;为什么是Ghostty？
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
