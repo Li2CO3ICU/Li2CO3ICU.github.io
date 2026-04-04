@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='http://localhost:1313/p/niri-custom-animations/'>
 
-<link rel="stylesheet" href="../../scss/style.min.5f0682a201ae9ccb8e0b5c3ea6eb1e38d170b8caaee618f97993cb1383eacf6f.css"><meta property='og:title' content="Niri自定义动画">
+<link rel="stylesheet" href="../../scss/style.min.f9d74c21227aabf6568815daeeca1fd5f3054775c4aa03827c586e2a9bb152e1.css"><meta property='og:title' content="Niri自定义动画">
 <meta property='og:description' content="Niri动画有关的都会更新在这里">
 <meta property='og:url' content='http://localhost:1313/p/niri-custom-animations/'>
 <meta property='og:site_name' content='Li2CO3_BLOG'>
@@ -360,7 +360,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-lambda"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 17l2 -3" /><path d="M15 17c-2.5 0 -2.5 -6 -5 -6" /></svg>
             <time class="article-time--reading">
-                本文共 598 字
+                本文共 505 字
             </time>
         </div>
         
@@ -396,206 +396,89 @@
 </h2><p>默认看起来很生硬，正好最近在折腾Ghostty的glsl，
 同时又发现niri支持自定义动画，用的也是glsl，于是<em>一拍即合</em></p>
 <h2 id="config展示">Config展示
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vi .config/niri/config.kdl
+</h2><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vi .config/niri/config.kdl
 </span></span><span class="line"><span class="cl"># 或者vim，nvim，nano，都是可以的
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>将下面的代码块插入<code>animations {}</code></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span><span class="lnt">55
-</span><span class="lnt">56
-</span><span class="lnt">57
-</span><span class="lnt">58
-</span><span class="lnt">59
-</span><span class="lnt">60
-</span><span class="lnt">61
-</span><span class="lnt">62
-</span><span class="lnt">63
-</span><span class="lnt">64
-</span><span class="lnt">65
-</span><span class="lnt">66
-</span><span class="lnt">67
-</span><span class="lnt">68
-</span><span class="lnt">69
-</span><span class="lnt">70
-</span><span class="lnt">71
-</span><span class="lnt">72
-</span><span class="lnt">73
-</span><span class="lnt">74
-</span><span class="lnt">75
-</span><span class="lnt">76
-</span><span class="lnt">77
-</span><span class="lnt">78
-</span><span class="lnt">79
-</span><span class="lnt">80
-</span><span class="lnt">81
-</span><span class="lnt">82
-</span><span class="lnt">83
-</span><span class="lnt">84
-</span><span class="lnt">85
-</span><span class="lnt">86
-</span><span class="lnt">87
-</span><span class="lnt">88
-</span><span class="lnt">89
-</span><span class="lnt">90
-</span><span class="lnt">91
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    //窗口打开的动画，小锂这里的配置是从屏幕顶部下落且伴有回弹效果
-</span></span><span class="line"><span class="cl">    window-open {
-</span></span><span class="line"><span class="cl">        spring damping-ratio=0.6 stiffness=600 epsilon=0.001
+</span></span></code></pre></div><p>将下面的代码块插入<code>animations {}</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-glsl" data-lang="glsl"><span class="line"><span class="cl"><span class="c1">//窗口打开的动画，小锂这里的配置是从屏幕顶部下落且伴有回弹效果</span>
+</span></span><span class="line"><span class="cl"><span class="n">window</span><span class="o">-</span><span class="n">open</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">spring</span> <span class="n">damping</span><span class="o">-</span><span class="n">ratio</span><span class="o">=</span><span class="mf">0.6</span> <span class="n">stiffness</span><span class="o">=</span><span class="mi">600</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.001</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        custom-shader r&#34;
-</span></span><span class="line"><span class="cl">            vec4 open_color(vec3 coords_geo, vec3 size_geo) {
-</span></span><span class="line"><span class="cl">                float p = niri_progress;
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                float y_offset = (1.0 - p) * 0.3;
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                vec3 moved_coords = vec3(coords_geo.x, coords_geo.y + y_offset, 1.0);
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                vec3 coords_tex = niri_geo_to_tex * moved_coords;
-</span></span><span class="line"><span class="cl">                vec4 color = texture2D(niri_tex, coords_tex.st);
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                if (coords_geo.y &lt; 0.0 || coords_geo.y &gt; 1.0 || coords_geo.x &lt; 0.0 || coords_geo.x &gt; 1.0) {
-</span></span><span class="line"><span class="cl">                    color = vec4(0.0);
-</span></span><span class="line"><span class="cl">                }
+</span></span><span class="line"><span class="cl">    <span class="n">custom</span><span class="o">-</span><span class="n">shader</span> <span class="n">r</span><span class="err">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">vec4</span> <span class="n">open_color</span><span class="p">(</span><span class="k">vec3</span> <span class="n">coords_geo</span><span class="p">,</span> <span class="k">vec3</span> <span class="n">size_geo</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span> <span class="n">p</span> <span class="o">=</span> <span class="n">niri_progress</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span> <span class="n">y_offset</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">p</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec3</span> <span class="n">moved_coords</span> <span class="o">=</span> <span class="k">vec3</span><span class="p">(</span><span class="n">coords_geo</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">coords_geo</span><span class="p">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">y_offset</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec3</span> <span class="n">coords_tex</span> <span class="o">=</span> <span class="n">niri_geo_to_tex</span> <span class="o">*</span> <span class="n">moved_coords</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec4</span> <span class="n">color</span> <span class="o">=</span> <span class="n">texture2D</span><span class="p">(</span><span class="n">niri_tex</span><span class="p">,</span> <span class="n">coords_tex</span><span class="p">.</span><span class="n">st</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">coords_geo</span><span class="p">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="mf">0.0</span> <span class="o">||</span> <span class="n">coords_geo</span><span class="p">.</span><span class="n">y</span> <span class="o">&gt;</span> <span class="mf">1.0</span> <span class="o">||</span> <span class="n">coords_geo</span><span class="p">.</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mf">0.0</span> <span class="o">||</span> <span class="n">coords_geo</span><span class="p">.</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">color</span> <span class="o">=</span> <span class="k">vec4</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                return color * niri_clamped_progress;
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">        &#34;
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    //窗口关闭的动画，小锂这里的配置是先溶解后下落
-</span></span><span class="line"><span class="cl">	window-close {
-</span></span><span class="line"><span class="cl">        duration-ms 1000 
-</span></span><span class="line"><span class="cl">        curve &#34;linear&#34;    
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">color</span> <span class="o">*</span> <span class="n">niri_clamped_progress</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        custom-shader r&#34;
-</span></span><span class="line"><span class="cl">            float rand(vec2 co){
-</span></span><span class="line"><span class="cl">                return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
-</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl"><span class="c1">//窗口关闭的动画，小锂这里的配置是先溶解后下落</span>
+</span></span><span class="line"><span class="cl"><span class="n">window</span><span class="o">-</span><span class="n">close</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">duration</span><span class="o">-</span><span class="n">ms</span> <span class="mi">1000</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">curve</span> <span class="err">&#34;</span><span class="n">linear</span><span class="err">&#34;</span>    
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            vec4 close_color(vec3 coords_geo, vec3 size_geo) {
-</span></span><span class="line"><span class="cl">                float p = niri_clamped_progress;
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                float noise = rand(coords_geo.xy * 30.0);
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                if (noise &lt; (p * 1.5 - (1.0 - coords_geo.y) * 0.2)) {
-</span></span><span class="line"><span class="cl">                    return vec4(0.0);
-</span></span><span class="line"><span class="cl">                }
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                //前20%的时间溶解，然后再下落
-</span></span><span class="line"><span class="cl">                float drop_p = max(0.0, p - 0.2) / 0.8;
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                float gravity = pow(drop_p, 3.0) * 4.0;
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                float spread = (noise - 0.5) * gravity * 0.1;
+</span></span><span class="line"><span class="cl">    <span class="n">custom</span><span class="o">-</span><span class="n">shader</span> <span class="n">r</span><span class="err">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">float</span> <span class="n">rand</span><span class="p">(</span><span class="k">vec2</span> <span class="n">co</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">fract</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">dot</span><span class="p">(</span><span class="n">co</span><span class="p">.</span><span class="n">xy</span> <span class="p">,</span><span class="k">vec2</span><span class="p">(</span><span class="mf">12.9898</span><span class="p">,</span><span class="mf">78.233</span><span class="p">)))</span> <span class="o">*</span> <span class="mf">43758.5453</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">vec4</span> <span class="n">close_color</span><span class="p">(</span><span class="k">vec3</span> <span class="n">coords_geo</span><span class="p">,</span> <span class="k">vec3</span> <span class="n">size_geo</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span> <span class="n">p</span> <span class="o">=</span> <span class="n">niri_clamped_progress</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span> <span class="n">noise</span> <span class="o">=</span> <span class="n">rand</span><span class="p">(</span><span class="n">coords_geo</span><span class="p">.</span><span class="n">xy</span> <span class="o">*</span> <span class="mf">30.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">noise</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="mf">1.5</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">coords_geo</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.2</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="k">vec4</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//前20%的时间溶解，然后再下落</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span> <span class="n">drop_p</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">p</span> <span class="o">-</span> <span class="mf">0.2</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span> <span class="n">gravity</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">drop_p</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span> <span class="n">spread</span> <span class="o">=</span> <span class="p">(</span><span class="n">noise</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="n">gravity</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec3</span> <span class="n">moved_coords</span> <span class="o">=</span> <span class="k">vec3</span><span class="p">(</span><span class="n">coords_geo</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">spread</span><span class="p">,</span> <span class="n">coords_geo</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">gravity</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec3</span> <span class="n">coords_tex</span> <span class="o">=</span> <span class="n">niri_geo_to_tex</span> <span class="o">*</span> <span class="n">moved_coords</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec4</span> <span class="n">color</span> <span class="o">=</span> <span class="n">texture2D</span><span class="p">(</span><span class="n">niri_tex</span><span class="p">,</span> <span class="n">coords_tex</span><span class="p">.</span><span class="n">st</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">moved_coords</span><span class="p">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="mf">0.0</span> <span class="o">||</span> <span class="n">moved_coords</span><span class="p">.</span><span class="n">y</span> <span class="o">&gt;</span> <span class="mf">1.0</span> <span class="o">||</span> <span class="n">moved_coords</span><span class="p">.</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mf">0.0</span> <span class="o">||</span> <span class="n">moved_coords</span><span class="p">.</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="k">vec4</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                vec3 moved_coords = vec3(coords_geo.x + spread, coords_geo.y - gravity, 1.0);
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                vec3 coords_tex = niri_geo_to_tex * moved_coords;
-</span></span><span class="line"><span class="cl">                vec4 color = texture2D(niri_tex, coords_tex.st);
-</span></span><span class="line"><span class="cl">                
-</span></span><span class="line"><span class="cl">                if (moved_coords.y &lt; 0.0 || moved_coords.y &gt; 1.0 || moved_coords.x &lt; 0.0 || moved_coords.x &gt; 1.0) {
-</span></span><span class="line"><span class="cl">                    return vec4(0.0);
-</span></span><span class="line"><span class="cl">                }
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">color</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">p</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                return color * (1.0 - p);
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">        &#34;
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl"><span class="c1">//窗口大小发生变化的动画</span>
+</span></span><span class="line"><span class="cl"><span class="n">window</span><span class="o">-</span><span class="n">resize</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">spring</span> <span class="n">damping</span><span class="o">-</span><span class="n">ratio</span><span class="o">=</span><span class="mf">0.7</span> <span class="n">stiffness</span><span class="o">=</span><span class="mi">800</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.0001</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    //窗口大小发生变化的动画
-</span></span><span class="line"><span class="cl">	window-resize {
-</span></span><span class="line"><span class="cl">        spring damping-ratio=0.7 stiffness=800 epsilon=0.0001
+</span></span><span class="line"><span class="cl">	<span class="n">custom</span><span class="o">-</span><span class="n">shader</span> <span class="n">r</span><span class="err">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">vec4</span> <span class="n">resize_color</span><span class="p">(</span><span class="k">vec3</span> <span class="n">coords_curr_geo</span><span class="p">,</span> <span class="k">vec3</span> <span class="n">size_curr_geo</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec3</span> <span class="n">coords_tex_next</span> <span class="o">=</span> <span class="n">niri_geo_to_tex_next</span> <span class="o">*</span> <span class="n">coords_curr_geo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">vec4</span> <span class="n">color</span> <span class="o">=</span> <span class="n">texture2D</span><span class="p">(</span><span class="n">niri_tex_next</span><span class="p">,</span> <span class="n">coords_tex_next</span><span class="p">.</span><span class="n">st</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">color</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		custom-shader r&#34;
-</span></span><span class="line"><span class="cl">            vec4 resize_color(vec3 coords_curr_geo, vec3 size_curr_geo) {
-</span></span><span class="line"><span class="cl">                vec3 coords_tex_next = niri_geo_to_tex_next * coords_curr_geo;
-</span></span><span class="line"><span class="cl">                vec4 color = texture2D(niri_tex_next, coords_tex_next.st);
-</span></span><span class="line"><span class="cl">                return color;
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">        &#34;
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    //窗口位置发生变动的动画    
-</span></span><span class="line"><span class="cl">	window-movement {
-</span></span><span class="line"><span class="cl">        spring damping-ratio=0.7 stiffness=800 epsilon=0.00001
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    //视角平移的动画
-</span></span><span class="line"><span class="cl">	horizontal-view-movement {
-</span></span><span class="line"><span class="cl">    	spring damping-ratio=1.0 stiffness=600 epsilon=0.00001
-</span></span><span class="line"><span class="cl">	}
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    //工作区切换的动画
-</span></span><span class="line"><span class="cl">	workspace-switch {
-</span></span><span class="line"><span class="cl">    	spring damping-ratio=0.7 stiffness=600 epsilon=0.0001
-</span></span><span class="line"><span class="cl">	}
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+</span></span><span class="line"><span class="cl"><span class="c1">//窗口位置发生变动的动画    </span>
+</span></span><span class="line"><span class="cl"><span class="n">window</span><span class="o">-</span><span class="n">movement</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">spring</span> <span class="n">damping</span><span class="o">-</span><span class="n">ratio</span><span class="o">=</span><span class="mf">0.7</span> <span class="n">stiffness</span><span class="o">=</span><span class="mi">800</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.00001</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//视角平移的动画</span>
+</span></span><span class="line"><span class="cl"><span class="n">horizontal</span><span class="o">-</span><span class="n">view</span><span class="o">-</span><span class="n">movement</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">spring</span> <span class="n">damping</span><span class="o">-</span><span class="n">ratio</span><span class="o">=</span><span class="mf">1.0</span> <span class="n">stiffness</span><span class="o">=</span><span class="mi">600</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.00001</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//工作区切换的动画</span>
+</span></span><span class="line"><span class="cl"><span class="n">workspace</span><span class="o">-</span><span class="k">switch</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">spring</span> <span class="n">damping</span><span class="o">-</span><span class="n">ratio</span><span class="o">=</span><span class="mf">0.7</span> <span class="n">stiffness</span><span class="o">=</span><span class="mi">600</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.0001</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
 </section>
 
 
@@ -728,7 +611,7 @@
         
         <span>
         发表了2篇文章 · 
-        总计1.91k字
+        总计1.80k字
         </span>    
     </section>
 
@@ -738,6 +621,11 @@
     </section>
     </span>
 </footer>
+
+<section class="running-time">
+本博客已稳定运行
+<span id="runningdays" class="running-days"></span>
+</section>
 
 
     
@@ -836,6 +724,21 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<script>
+    let s1 = '2023-3-18'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
 
     </body>
 </html>

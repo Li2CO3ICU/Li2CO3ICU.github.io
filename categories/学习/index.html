@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/'>
 
-<link rel="stylesheet" href="../../scss/style.min.5f0682a201ae9ccb8e0b5c3ea6eb1e38d170b8caaee618f97993cb1383eacf6f.css"><meta property='og:title' content="Category: 学习 - Li2CO3_BLOG">
+<link rel="stylesheet" href="../../scss/style.min.f9d74c21227aabf6568815daeeca1fd5f3054775c4aa03827c586e2a9bb152e1.css"><meta property='og:title' content="Category: 学习 - Li2CO3_BLOG">
 <meta property='og:description' content="这里是小锂的blog">
 <meta property='og:url' content='http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/'>
 <meta property='og:site_name' content='Li2CO3_BLOG'>
@@ -475,7 +475,7 @@
         
         <span>
         发表了2篇文章 · 
-        总计1.91k字
+        总计1.80k字
         </span>    
     </section>
 
@@ -485,6 +485,11 @@
     </section>
     </span>
 </footer>
+
+<section class="running-time">
+本博客已稳定运行
+<span id="runningdays" class="running-days"></span>
+</section>
 
 
             </main>
@@ -505,6 +510,21 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<script>
+    let s1 = '2023-3-18'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
 
     </body>
 </html>
